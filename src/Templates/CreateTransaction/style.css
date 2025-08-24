@@ -1,0 +1,74 @@
+.createForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.3);
+    width: 70%;
+}
+
+.saveButton {
+    cursor: pointer;
+    width: 50% !important;
+    margin-top: 20px;
+    background-color: #1c6632;
+    color: white;
+    transition: box-shadow 0.5s ease;
+    border: none !important;
+}
+
+.saveButton:hover {
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.89);
+}
+
+.saveButton:active {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
+}
+
+.createContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 150px;
+    align-items: center;
+    height: 100dvh;
+    height: 100vh;
+}
+
+.createForm input {
+    border-radius: 8px;
+    border: 1px solid rgb(163, 163, 163);
+    height: 35px;
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+    font-size: 18px;
+}
+
+
+.createForm input:focus {
+    outline-color: #1c6632;
+}
+
+.createForm label {
+    align-items: baseline;
+    width: 90%;
+    font-weight: 600;
+    color: #1c6632;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.createSelect {
+    border-radius: 8px;
+    border: 2px solid rgb(163, 163, 163);
+    height: 35px;
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+    margin-left: 3.5%;
+    font-size: 18px;
+    align-self: flex-start;
+    cursor: pointer;
+}

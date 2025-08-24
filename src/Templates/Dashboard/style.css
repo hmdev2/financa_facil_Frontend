@@ -1,0 +1,171 @@
+.dashboardContainer {
+    border-radius: 20px;
+    padding: 5px 20px;
+    width: 90%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.3);
+    gap: 25px;
+    background-color: whitesmoke;
+}
+
+.transactionsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    width: 90%;
+    background-color: white;
+}
+
+.transactionsContainer table{
+    width: 100%;
+}
+
+.transactionsContainer thead {
+    color: rgb(104, 104, 104);
+}
+
+.transactionsContainer tr {
+     border-bottom: 1px solid #ccc;
+}
+
+.transactionsContainer th {
+    text-align: left;
+}
+
+.transactionsContainer td, th {
+    padding: 10px;
+}
+
+.transactionsContainer tbody {
+    font-weight: bolder;
+}
+
+.transaction {
+    border-bottom: 1px solid black;
+}
+
+.dashboardTop {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.dashboardTopDiv {
+    border-radius: 10px;
+    box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.3);
+    padding: 20px 40px;
+    min-width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+.valueTopDiv {
+    width: 100%;
+    display: flex;
+    justify-content: baseline;
+    height: 20%;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    color: rgb(73, 73, 73);
+}
+
+.valueDiv {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.transactionButtons {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 10px;
+}
+
+.logOutButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease;
+    color: white;
+}
+
+.logOutButton:hover {
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.89);
+}
+
+.logOutButton:active {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
+}
+
+.transactionButtons input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease;
+    color: white;
+}
+
+.transactionButtons input:hover {
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.89);
+}
+
+.transactionButtons input:active {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
+}
+
+.dashboardHeader {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.midDashboard {
+    width: 90%;
+}
+
+.addButton {
+    padding: 10px;
+    border-radius: 100%;
+    border: none;
+    background-color: rgb(55, 55, 255);
+    color: white;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease;
+    text-decoration: none;
+}
+
+.addButton:hover {
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.89);
+}
+
+.addButton:active {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
+}
