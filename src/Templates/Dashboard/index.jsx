@@ -112,7 +112,7 @@ export const Dashboard = () => {
     };
 
     return(
-        <div className='container'>
+        <div className='container containerMediaDash'>
             <div className='dashboardContainer'>
 
                 <div className='dashboardHeader'>

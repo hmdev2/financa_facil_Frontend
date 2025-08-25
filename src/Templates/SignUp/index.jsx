@@ -88,7 +88,7 @@ export const SignUp = () => {
     };
 
     return(
-        <div className='container backgroundIn'>
+        <div className='container containerMedia backgroundIn'>
             <form className='formContainer' onSubmit={handleSubmit}>
                 <h1 style={{marginBottom: "15px", color: "#448859"}}>Registre-se</h1>
                 <label htmlFor="name">Nome</label>

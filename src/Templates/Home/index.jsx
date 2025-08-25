@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export const Home = () => {
 
     return (
-        <div className='container'>
+        <div className='container containerMedia'>
             <div className='principal_presentation'>
                 <div style={{marginBottom: "15px"}}>
                     <h1>Gerencie suas finanças com facilidade</h1>

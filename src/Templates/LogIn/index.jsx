@@ -60,7 +60,7 @@ export const LogIn = () => {
     };
     
     return(
-         <div className='container backgroundIn'>
+         <div className='container containerMedia backgroundIn'>
             <form className='formContainer' onSubmit={handleSubmit}>
                 <h1 style={{marginBottom: "15px", color: "#448859"}}>Entrar</h1>
                 <label htmlFor="email">Email</label>

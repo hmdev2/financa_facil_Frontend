@@ -39,3 +39,48 @@
     font-weight: 600;
     color: #1c6632;
 }
+
+@media (max-width: 768px) {
+
+    .formContainer {
+        width: 400px;
+        padding: auto 100px;
+        gap: 10px;
+        font-size: 30px;
+    }
+
+    .formContainer input {
+        height: 60px;
+        font-size: 28px;
+        width: 110%;
+    }
+
+    .formContainer label {
+        width: 110%;
+    }
+
+
+    .backgroundIn {
+        background-position: top;
+        background-size: 800px;
+        background-repeat: repeat-y;
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    .formContainer {
+        width: 300px;
+        padding: auto 50px;
+        gap: 10px;
+        font-size: 20px;
+    }
+
+    .backgroundIn {
+        background-position: top;
+        background-size: 500px;
+        background-repeat: repeat-y;
+    }
+
+}

@@ -72,3 +72,54 @@
     align-self: flex-start;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+
+    .createForm {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .createContainer {
+        padding: 0px 100px;
+        height: 80dvh;
+        height: 80vh;
+    }
+
+    .createForm label {
+        width: 95%;
+    }
+
+
+    .createForm input {
+        height: 45px;
+        width: 95%;
+        font-size: 20px;
+    }
+
+    .createSelect {
+        height: 45px;
+        width: 55%;
+        margin-left: 0%;
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    .createForm {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .createContainer {
+        padding: 0px 50px;
+    }
+
+    .createForm input {
+        height: 45px;
+        width: 90%;
+        font-size: 20px;
+    }
+    
+}

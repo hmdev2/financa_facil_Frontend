@@ -1,7 +1,7 @@
 import { toast, ToastContainer } from "react-toastify";
 import "./style.css";
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 export const CreateTransaction = () => {
 
@@ -109,6 +109,7 @@ export const CreateTransaction = () => {
                     <label htmlFor="date">Data</label>
                     <input value={date} className="createSelect" onChange={(e) => setDate(e.target.value)} type="date" name="date" id="date" />
                     <input type="submit" value="Salvar" style={{backgroundColor: `${color}`}} className="saveButton"/>
+                    <Link to="/dashboard">Cancelar</Link>
                 </form>
             </div>
             <ToastContainer position="top-right" autoClose={3000} />

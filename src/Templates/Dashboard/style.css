@@ -14,14 +14,12 @@
 
 .transactionsContainer {
     width: 90%;
-    max-height: calc(95% - 10px); /* já tinha */
-    overflow-y: auto; /* scroll vertical */
+    max-height: calc(95% - 10px);
+    overflow-y: auto;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 5px 10px 4px rgba(0,0,0,0.3);
     background-color: white;
-
-    /* removido flexbox */
     display: block; 
 }
 
@@ -33,9 +31,9 @@
 .transactionsContainer thead {
     color: rgb(104, 104, 104);
     position: sticky;
-    top: 0; /* fica no topo do container */
-    background-color: white; /* ou a cor do seu cabeçalho */
-    z-index: 1; /* garante que fique acima das linhas */
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 
@@ -169,4 +167,70 @@
 
 .addButton:active {
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
+}
+
+@media (max-width: 768px) {
+
+    .containerMediaDash {
+
+        padding: 0px !important;
+        height: 100vh;
+        height: 100dvh;
+    
+        width: 100vw;
+        width: 100dvw;
+
+    }
+
+    .dashboardContainer {
+        padding: 5px 10px;
+        width: 80vw;
+        width: 80dvw;
+        height: 80vh;
+        height: 80dvh;
+        margin: 0;
+    }
+
+    .transactionsContainer {
+        font-size: 17.5px;
+        width: 95%;
+    }
+
+    .dashboardTopDiv {
+        padding: 10px 20px;
+        min-width: 25%;
+    }
+
+    .valueDiv {
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    .dashboardContainer {
+        padding: 5px 5px;
+        width: 80vw;
+        width: 80dvw;
+        height: 80vh;
+        height: 80dvh;
+        margin: 0;
+    }
+
+     .transactionsContainer {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    .dashboardTopDiv {
+        padding: 8px 5px;
+        min-width: 15%;
+
+    }
+
+    .valueDiv {
+        font-size: 15px;
+    }
+
 }

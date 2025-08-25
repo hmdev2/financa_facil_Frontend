@@ -53,3 +53,66 @@
 .in_button:active {
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
 }
+
+@media (max-width: 768px) {
+
+    .containerMedia {
+        flex-direction: column ;
+        padding: 20px 80px ;
+    }
+
+    .principal_presentation {
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.699);
+        position: absolute;
+        padding: 20px 80px;
+        top: 200px;
+        gap: 50px;
+    }
+
+    .img_presentation_container {
+        display: block;
+        position: absolute;
+        top: 160px;
+        right: 60px;
+    }
+
+    .in_button {
+        width: 160px;
+        height: 80px;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .containerMedia {
+        padding: 20px 20px;
+    }
+
+    .principal_presentation {
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.699);
+
+        position: relative;
+        padding: 0px 0px;
+        top: auto;
+    }
+
+    .img_presentation_container {
+        display: block;
+        position: absolute;
+        top: 120px;
+        right: auto;
+    }
+
+    .in_button {
+        width: 140px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+}
+
