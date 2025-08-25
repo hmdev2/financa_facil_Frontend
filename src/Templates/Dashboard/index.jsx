@@ -59,11 +59,12 @@ export const Dashboard = () => {
                     totalEx += Number(t.amount);
                 }
 
-                setTotal(totalc);
-                setTotalIncome(totalIn);
-                setTotalExpense(totalEx);
-                
             });
+            
+            setTotal(totalc);
+            setTotalIncome(totalIn);
+            setTotalExpense(totalEx);
+            
         };
 
         totalCalculate();
@@ -104,6 +105,10 @@ export const Dashboard = () => {
 
         localStorage.removeItem("Authorization");
         navigate("/");
+    };
+
+    const handleEdit = (id) => {
+        navigate(`/edit/${id}`);
     };
 
     return(
@@ -165,14 +170,14 @@ export const Dashboard = () => {
                                             <tr className="transaction" key={transaction.id}>
                                                 <td>{transaction.title}</td>
                                                 {transaction.type === "income" ? 
-                                                    <td style={{color: "green"}}>{transaction.amount}</td> : <td style={{color: "red"}}>{transaction.amount}</td> 
+                                                    <td style={{color: "green"}}>R$ {transaction.amount}</td> : <td style={{color: "red"}}>R$ {transaction.amount}</td> 
                                                 }
                                                 {transaction.type === "income" ? 
                                                     <td style={{color: "green"}}>Entrada</td> : <td style={{color: "red"}}>Saída</td> 
                                                 }
                                                 <td style={{color: "rgb(73, 73, 73)"}}>{transaction.date}</td>
                                                 <div className='transactionButtons'>
-                                                    <input style={{backgroundColor: "orange"}} type="submit" value="Editar" />
+                                                    <input style={{backgroundColor: "orange"}} type="submit" value="Editar" onClick={() => handleEdit(transaction.id)} />
                                                     <input style={{backgroundColor: "rgb(255, 61, 61)"}} type="submit" value="Excluir" onClick={() => handleDelete(transaction.id)} />
                                                 </div>
                                             </tr>

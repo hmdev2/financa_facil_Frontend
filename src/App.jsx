@@ -16,6 +16,7 @@ function App() {
             <Route element={<ProtectedRoute />}>
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/create" element={<CreateTransaction />} />
+                <Route path="/edit/:id" element={<CreateTransaction />} />
             </Route>
            
         </Routes>

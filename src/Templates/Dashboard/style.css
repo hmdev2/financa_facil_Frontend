@@ -9,30 +9,35 @@
     box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.3);
     gap: 25px;
     background-color: whitesmoke;
+    
 }
 
 .transactionsContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.3);
-    padding: 10px;
     width: 90%;
+    max-height: calc(95% - 10px); /* já tinha */
+    overflow-y: auto; /* scroll vertical */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 4px rgba(0,0,0,0.3);
     background-color: white;
+
+    /* removido flexbox */
+    display: block; 
 }
 
 .transactionsContainer table{
     width: 100%;
+    border-collapse: collapse;
 }
 
 .transactionsContainer thead {
     color: rgb(104, 104, 104);
+    position: sticky;
+    top: 0; /* fica no topo do container */
+    background-color: white; /* ou a cor do seu cabeçalho */
+    z-index: 1; /* garante que fique acima das linhas */
 }
 
-.transactionsContainer tr {
-     border-bottom: 1px solid #ccc;
-}
 
 .transactionsContainer th {
     text-align: left;
@@ -44,10 +49,6 @@
 
 .transactionsContainer tbody {
     font-weight: bolder;
-}
-
-.transaction {
-    border-bottom: 1px solid black;
 }
 
 .dashboardTop {
