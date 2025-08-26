@@ -55,7 +55,7 @@ export const CreateTransaction = () => {
 
 
             const response = await fetch(url, {
-                method: "POST",
+                method: id? "PUT" : "POST",
                 headers: {
                     "Content-Type": "application/json",
                     "Authorization": token,
