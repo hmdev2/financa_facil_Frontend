@@ -12,7 +12,7 @@ export const ProtectedRoute = () => {
             return;
         }
 
-        fetch("http://127.0.0.1:8000/api/validate-token", {
+        fetch("https://financa-facil-g3n2.onrender.com/api/validate-token", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",

@@ -18,7 +18,7 @@ export const CreateTransaction = () => {
 
     useEffect(() => {
         if(id) {
-            fetch(`http://127.0.0.1:8000/api/transaction/${id}`, {
+            fetch(`https://financa-facil-g3n2.onrender.com/api/transaction/${id}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -39,7 +39,7 @@ export const CreateTransaction = () => {
         
         e.preventDefault();
 
-        const url = id ? `http://127.0.0.1:8000/api/transaction/${id}` : "http://127.0.0.1:8000/api/transaction/store";
+        const url = id ? `https://financa-facil-g3n2.onrender.com/api/transaction/${id}` : "https://financa-facil-g3n2.onrender.com/api/transaction/store";
 
         if(title === "" || amount === "" || date === "") {
             toast.error("Preencha todos os campos");

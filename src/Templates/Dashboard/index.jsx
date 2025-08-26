@@ -16,7 +16,7 @@ export const Dashboard = () => {
 
     const fetchTransactions = async () => {
             try{
-                const response = await fetch("http://127.0.0.1:8000/api/dashboard", {
+                const response = await fetch("https://financa-facil-g3n2.onrender.com/api/dashboard", {
                     headers: {
                         "Content-Type": "application/json",
                         "Authorization": token,
@@ -74,7 +74,7 @@ export const Dashboard = () => {
     const handleDelete = async (id) => {
 
         try {
-            const response = await fetch(`http://127.0.0.1:8000/api/transaction/${id}`, {
+            const response = await fetch(`https://financa-facil-g3n2.onrender.com/api/transaction/${id}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json",
@@ -95,7 +95,7 @@ export const Dashboard = () => {
     };
 
     const handleLogOut = async () => {
-        await fetch("http://127.0.0.1:8000/api/logout", {
+        await fetch("https://financa-facil-g3n2.onrender.com/api/logout", {
             method: "POST",
             headers: {
                     "Content-Type": "application/json",
@@ -112,7 +112,7 @@ export const Dashboard = () => {
     };
 
     return(
-        <div className='container containerMediaDash'>
+        <div className='container containerMediaDash dashboardBackgroundImg'>
             <div className='dashboardContainer'>
 
                 <div className='dashboardHeader'>
