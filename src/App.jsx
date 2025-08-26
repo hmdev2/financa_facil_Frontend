@@ -5,6 +5,7 @@ import { LogIn } from './Templates/LogIn';
 import { Dashboard } from './Templates/Dashboard';
 import { ProtectedRoute } from './Components/ProtectedRoute';
 import { CreateTransaction } from './Templates/CreateTransaction';
+import { Page404 } from './Templates/Page404';
 
 function App() {
     return (
@@ -19,6 +20,8 @@ function App() {
                 <Route path="/edit/:id" element={<CreateTransaction />} />
             </Route>
            
+            <Route path='*' element={<Page404 />} />
+            
         </Routes>
     );
 }
