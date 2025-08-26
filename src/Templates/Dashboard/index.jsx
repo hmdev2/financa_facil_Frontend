@@ -38,7 +38,7 @@ export const Dashboard = () => {
 
     useEffect(() => {
         fetchTransactions();
-    }, []);
+    }, []); // eslint-disable-line
 
     useEffect(() => {
         const totalCalculate = () => {

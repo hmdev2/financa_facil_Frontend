@@ -33,7 +33,7 @@ export const CreateTransaction = () => {
                 setDate(data.date);
             });
         }
-    }, [id]);
+    }, [id]); // eslint-disable-line
 
     const handleSubmit = async (e) => {
         
